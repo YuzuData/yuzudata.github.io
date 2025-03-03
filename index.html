@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yuzu - Location Intelligence</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
+        <div class="corner-decoration corner-top-left"></div>
+        <div class="corner-decoration corner-top-right"></div>
+        <div class="corner-decoration corner-bottom-left"></div>
+        <div class="corner-decoration corner-bottom-right"></div>
+        
         <header>
             <div class="logo">
                 <div class="logo-icon">
@@ -29,11 +36,11 @@
                 <a href="#contact">Contact</a>
             </nav>
             <div class="theme-toggle-container">
-                <button class="theme-toggle" id="theme-toggle-light" title="Light Mode">
-                    <i class="fas fa-sun"></i>
-                </button>
                 <button class="theme-toggle" id="theme-toggle-dark" title="Dark Mode">
                     <i class="fas fa-moon"></i>
+                </button>
+                <button class="theme-toggle" id="theme-toggle-light" title="Light Mode">
+                    <i class="fas fa-sun"></i>
                 </button>
                 <button class="theme-toggle" id="theme-toggle-cyberpunk" title="Cyberpunk Mode">
                     <i class="fas fa-bolt"></i>
@@ -43,15 +50,59 @@
 
         <section class="hero">
             <div class="hero-content">
-                <h1>Transform your business with <span>location intelligence</span></h1>
-                <p class="subtitle">Unlock the power of spatial data and make smarter decisions with Yuzu's cutting-edge location analytics platform.</p>
+                <h1>Unlock the power of <span>location intelligence & AI</span></h1>
+                <p class="subtitle">How things are related to other things in the real world. It's not something we think about often, but it affects nearly every business in a big way.</p>
                 <a href="#contact" class="btn">Get Started</a>
             </div>
             <div class="hero-image">
-                <img src="/api/placeholder/550/350" alt="Yuzu Location Intelligence Platform">
+                <img src="assets/yuzu_hero.jpg" alt="Yuzu Location Intelligence Platform">
             </div>
         </section>
 
+        <section class="customer-logos">
+            <h2 class="section-title">We've worked with some of the best companies out there</h2>
+            <div class="logos-scroll-container">
+                <div class="logos-container">
+                    <div class="logo-item">
+                        <img src="assets/azira.png" alt="Company 1">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/carto.png" alt="Company 2">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/cbre.png" alt="Company 3">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/cushman.png" alt="Company 4">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/placer.png" alt="Company 5">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/jll.png" alt="Company 6">
+                    </div>
+                    <!-- Duplicate logos for infinite scroll effect -->
+                    <div class="logo-item">
+                        <img src="assets/azira.png" alt="Company 1">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/carto.png" alt="Company 2">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/cbre.png" alt="Company 3">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/cushman.png" alt="Company 4">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/placer.png" alt="Company 5">
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/jll.png" alt="Company 6">
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="features" id="features">
             <h2 class="section-title">Our Features</h2>
             <div class="features-grid">
@@ -79,6 +130,58 @@
             </div>
         </section>
 
+        <section class="what-we-do">
+            <h2 class="section-title">What We Do</h2>
+            <div class="what-we-do-grid">
+                <div class="what-we-do-item">
+                    <div class="what-we-do-content">
+                        <h3>Location Data Analysis</h3>
+                        <p>Transform raw location data into actionable insights. Our AI-powered platform processes complex spatial information to reveal hidden patterns and opportunities.</p>
+                        <ul class="what-we-do-list">
+                            <li><i class="fas fa-check-circle"></i> Spatial pattern recognition</li>
+                            <li><i class="fas fa-check-circle"></i> Geographic market analysis</li>
+                            <li><i class="fas fa-check-circle"></i> Customer behavior mapping</li>
+                        </ul>
+                    </div>
+                    <div class="what-we-do-image">
+                        <img src="assets/yuzu_hero.jpg" alt="Location Data Analysis">
+                    </div>
+                </div>
+                
+                <div class="what-we-do-item reverse">
+                    <div class="what-we-do-content">
+                        <h3>AI-Driven Predictions</h3>
+                        <p>Leverage machine learning algorithms to forecast trends and make data-driven decisions. Our predictive models help you stay ahead of market changes.</p>
+                        <ul class="what-we-do-list">
+                            <li><i class="fas fa-check-circle"></i> Future trend forecasting</li>
+                            <li><i class="fas fa-check-circle"></i> Risk assessment modeling</li>
+                            <li><i class="fas fa-check-circle"></i> Growth opportunity identification</li>
+                        </ul>
+                    </div>
+                    <div class="what-we-do-image">
+                        <img src="assets/yuzu_hero.jpg" alt="AI-Driven Predictions">
+                    </div>
+                </div>
+                
+                <div class="what-we-do-item">
+                    <div class="what-we-do-content">
+                        <h3>Custom Solutions</h3>
+                        <p>Every business is unique. We work closely with you to develop tailored location intelligence solutions that address your specific challenges and goals.</p>
+                        <ul class="what-we-do-list">
+                            <li><i class="fas fa-check-circle"></i> Customized reporting</li>
+                            <li><i class="fas fa-check-circle"></i> Integration support</li>
+                            <li><i class="fas fa-check-circle"></i> Scalable solutions</li>
+                        </ul>
+                    </div>
+                    <div class="what-we-do-image">
+                        <img src="assets/yuzu_hero.jpg" alt="Custom Solutions">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
         <section class="cta" id="contact">
             <h2>Ready to get started?</h2>
             <p class="cta-text">Join hundreds of businesses already using Yuzu to transform their location data into strategic advantage.</p>
@@ -99,7 +202,7 @@
                 </div>
                 <div class="logo-text">yuzu</div>
             </div>
-            <p class="copyright">© 2025 Yuzu Location Intelligence. All rights reserved.</p>
+            <p class="copyright">© 2025 YuzuData Inc. All rights reserved.</p>
         </footer>
     </div>
 

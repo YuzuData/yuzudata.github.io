@@ -1,3 +1,7 @@
+# Junk
+.old/
+.junk/
+
 # Dependencies
 node_modules/
 /.pnp
